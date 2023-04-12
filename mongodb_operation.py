@@ -1,11 +1,5 @@
 from pymongo import MongoClient
 from bson.objectid import ObjectId
-import environment
-
-
-DB_URI = environment.DB_URI
-DB_NAME = environment.DB_NAME
-DB_COLLECTION_NAME = environment.DB_NAME
 
 class MongoDBOperation:
     
