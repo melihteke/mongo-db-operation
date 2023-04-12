@@ -1,6 +1,7 @@
 ## MongoDB Python CRUD Operations
 
 This project provides a simple Python interface for performing CRUD (Create, Read, Update, Delete) operations on a MongoDB database using the PyMongo library.
+Before using this code, you need to have a prebuilt MongoDB installed on your system or somewhere else.
 
 ### Installation
 
