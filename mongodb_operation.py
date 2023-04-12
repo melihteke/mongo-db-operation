@@ -1,8 +1,9 @@
 from pymongo import MongoClient
 from bson.objectid import ObjectId
+import environment
 
 class MongoDBOperation:
-    import environment
+
     
     def __init__(self, uri=environment.DB_URI, db_name=environment.DB_NAME, collection_name=environment.DB_COLLECTION_NAME):
         self.client = MongoClient(uri)
