@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 from bson.objectid import ObjectId
-import environment
+#import environment
 
 
 #DB_URI = environment.DB_URI
