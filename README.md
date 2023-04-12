@@ -135,7 +135,7 @@ In [12]:
 ##### Updating a record
 
 ```sh
-In [12]: data_updated = {  "hostname": "DEV2012R01",
+In [12]: data_to_be_updated = {  "hostname": "DEV2012R01",
     ...:   "device_type":"router",
     ...:   "site_number":"2012",
     ...:   "site": "Dublin_XXXXXXXXXXXXXXXX",
@@ -152,7 +152,7 @@ In [12]: data_updated = {  "hostname": "DEV2012R01",
     ...:   "l2_ints":["GigabitEthernet0/1/0","GigabitEthernet0/1/1", "GigabitEthernet0/1/2", "GigabitEthernet0/1/3"]
     ...: }
 
-In [13]: operation.update_record('64370e340971a02bdf950164',data_updated)
+In [13]: operation.update_record('64370e340971a02bdf950164',data_to_be_updated)
 
 In [15]: operation.view_all_records()
 Out[15]: 
