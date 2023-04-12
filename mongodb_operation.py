@@ -3,11 +3,17 @@ from bson.objectid import ObjectId
 import environment
 
 
-DB_URI = environment.DB_URI
-DB_NAME = environment.DB_NAME
-DB_COLLECTION_NAME = environment.DB_NAME
+#DB_URI = environment.DB_URI
+#DB_NAME = environment.DB_NAME
+#DB_COLLECTION_NAME = environment.DB_NAME
 
 class MongoDBOperation:
+    import environment
+    
+    DB_URI = environment.DB_URI
+    DB_NAME = environment.DB_NAME
+    DB_COLLECTION_NAME = environment.DB_NAME
+    
     def __init__(self, uri, db_name, collection_name):
         self.client = MongoClient(uri)
         self.db = self.client.get_database(db_name)
