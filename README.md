@@ -42,8 +42,8 @@ DB_COLLECTION_NAME=<DB_COLLECTION_NAME>
 
 #### Usage
 ```sh
-mongo_db_operation.mongo_client import MongoDBOperation
-mongo_db_operation import environment
+from mongo_db_operation.mongo_client import MongoDBOperation
+from mongo_db_operation import environment
 
 operation = MongoDBOperation()
 
